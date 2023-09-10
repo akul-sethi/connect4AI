@@ -24,13 +24,13 @@ Restart button will appear when game is over, use it to clear the board.
 # Advanced
 There are 3 hyperparameters of the program which can be manipulated to change performance: ITERATIONS, NUM_ROLLOUTS, and UCB_RATE. They can be found at the beginning of the Game class.
 
-## ITERATIONS
+### ITERATIONS
 The number of times the Monte Carlo Tree is expanded. Increasing this number can increase accuracy but will also increase the amount of time the algorithm runs.
 
-## NUM_ROLLOUTS
+### NUM_ROLLOUTS
 The Monte Carlo Tree Search evaluates positions by running a certain number of "rollouts." A rollout is a are simulated where moves are made randomly by the computer for each side. The number of times each side wins is used to then determine how good its position is. Increasing this hyperparameter can lead to better position evaluations but will also increase the duration of the algorithm.
 
-## UCB_RATE
+### UCB_RATE
 The Monte Carlo Tree Search uses an Upper Confidence Bound equation to determine how the algorithm balances exploration vs exploitation. Exploration is when the algorithm explores parts of the tree it has never seen before wherease exploitation is when is explorers parts of the tree it thinks is good. Increasing UCB_RATE increases the algorithms "preference" for exploration while decreasing it increases the likelyhood of exploitation. 
 
 # Future improvements
